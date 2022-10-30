@@ -1,18 +1,25 @@
 import { StyleSheet } from 'react-native';
+import darkColors from '../themes/colors/dark';
+import fonts from '../themes/fonts/fonts';
 
 const filmlistStyles = StyleSheet.create({
     container:{
-      backgroundColor: 'rgba(148, 148, 148, 0.5)',
       flex: 1,
-      //marginHorizontal: 'auto',
-      //width: "50%"
-      //alignItems: 'center',
-    //justifyContent: 'center'
-     
     },
     text:{
-        fontSize: 30,
-        color: 'rgba(255, 255, 255, 1.0)',
+      fontSize: 30,
+      color: darkColors.kindOfWhite,
+      fontFamily: fonts.fontDemiBold,
+      marginLeft: 16,
+    },
+    flatList:{
+    },
+    textContainer:{
+      flex: 1,
+      justifyContent: 'center'
+    },
+    flatListContainer:{
+      flex: 5,
     }
 });
 

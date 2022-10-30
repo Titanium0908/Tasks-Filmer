@@ -7,14 +7,8 @@ import FilmList from './films/FilmList';
 export default function Home() {
     return (
       <View style={homeStyles.container}>
-        <Text style={homeStyles.text}>
-          Popular
-        </Text>
-        <FilmList/>
-        <Text style={homeStyles.text}>
-          Film For You
-        </Text>
-        <FilmList/>
+        <FilmList title={"POPULAR"}/>
+        <FilmList title={"FILMS FOR YOU"}/>
       </View>
     );
   };

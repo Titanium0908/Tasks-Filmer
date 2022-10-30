@@ -1,23 +1,37 @@
 import { View,Text, FlatList } from 'react-native';
 import filmlistStyles from '../../../../styles/filmlist';
-import DATA from '../../../../temp/data';
 import FilmItem from './FilmItem';
+import { useSelector } from 'react-redux'
+import { useEffect } from 'react';
 
-export default function FilmList() {
+export default function FilmList(props) {
+  const json = useSelector(state => state.data.films) 
 
-  // const renderItem = ({item}) => {
+  const renderItem = ({item}) => {
     return(
       <FilmItem
-        // title={item.title}
+         title={item.title}
+         rate={item.rate}
       />
     )
   }
 
-  //   // return (
-  //   //   <FlatList
-  //   //     data={DATA}
-  //   //     renderItem={renderItem}
-  //   //     keyExtractor={(item) => item.id}
-  //   //   />
-  //   // );
-  // };
+    return (
+      <View style={filmlistStyles.container}>
+        <View style={filmlistStyles.textContainer}>
+          <Text style={filmlistStyles.text}>
+            {props.title}
+          </Text>
+        </View>
+        <View style={filmlistStyles.flatListContainer}>
+          <FlatList
+            style={filmlistStyles.flatList}
+            data={json.data}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            horizontal={true}
+          />
+        </View>                
+      </View>
+    );
+  };

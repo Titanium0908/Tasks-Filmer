@@ -1,27 +1,36 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux'
-import { Text, View, Pressable } from 'react-native';
+import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { Pressable } from 'react-native';
 import { setPage } from '../../features/counter/pageSlice';
 import navigationbuttonStyles from '../../styles/navigationbutton';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 export default function NavigationButton(props) {
   const id = props.id;
-  const title = props.title;
   const icon = props.icon;
-  //const [title, setTitle] = useState(props.title)
   const dispatch = useDispatch()
-  
+
+  const currentPage = useSelector(state => state.page.currentPage)  
+  const [isSelected, setIsSelected] = useState(false)
+
+  useEffect(() => {
+    if (currentPage === id) {
+      setIsSelected(true)
+    }
+    else {
+      setIsSelected(false)
+    }
+  }, [currentPage]);
+
   return (  
-      <View style={navigationbuttonStyles.container}>
-        <Pressable style={navigationbuttonStyles.pressableArea} onPress={() => dispatch(setPage(id))}>
-        <FontAwesome5Icon size={30} name={icon} style={navigationbuttonStyles.tinyLogo}/>       
-          <Text style={navigationbuttonStyles.title}>
-            {title}
-          </Text>
-        </Pressable>
-      </View>
+    <Pressable 
+      style={isSelected ? navigationbuttonStyles.pressableAreaSelected : navigationbuttonStyles.pressableArea} 
+      onPress={() => dispatch(setPage(id))}>
+      <FontAwesomeIcon 
+        size={30} 
+        name={icon} 
+        style={isSelected ? navigationbuttonStyles.tinyLogoSelected : navigationbuttonStyles.tinyLogo}/>
+    </Pressable>
     );
   };
   

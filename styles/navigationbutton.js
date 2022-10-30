@@ -1,23 +1,29 @@
 import { StyleSheet } from 'react-native';
+import darkColors from '../themes/colors/dark';
 
 const navigationbuttonStyles = StyleSheet.create({
-    title: {
-      fontSize: 20,
-      color: "#DC7311",
-      flexDirection: "row",
+    tinyLogoSelected: {
+      color: darkColors.kindOfWhite,
       margin: 'auto',
     },
-    container:{
-      flex: 1,
-      alignItems: "stretch",
-      //marginHorizontal: 'auto',
+    pressableAreaSelected: {
+      width: 58,
+      height: 58,
+      backgroundColor: darkColors.darkBlue,
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: 10,
     },
     tinyLogo: {
-      color: "#DC7311",
+      color: darkColors.gray,
       margin: 'auto',
     },
     pressableArea: {
-      flex: 1,
+      width: 58,
+      height: 58,
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: 10,
     }
 });
 

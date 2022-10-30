@@ -1,23 +1,19 @@
 import { StyleSheet } from 'react-native';
+import darkColors from '../themes/colors/dark';
+import fonts from '../themes/fonts/fonts';
 
 const homeStyles = StyleSheet.create({
     container:{
-      backgroundColor: 'rgba(0, 0, 0, 0.95)',
       flex: 1,
-      //alignItems: 'center',
       
     },
     text:{
-        fontSize: 40,
-        color: 'rgba(255, 255, 255, 1.0)',
+        fontFamily: fonts.fontDemiBold,
+        fontSize: 34,
+        color: darkColors.kindOfWhite,
         margin: 'auto',
-        // paddingVertical: 50,
-        // paddingHorizontal: 300,
         flex: 1,
     },
-    flatList:{
-
-    }
 });
 
 export default homeStyles;

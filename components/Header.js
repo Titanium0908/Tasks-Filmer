@@ -5,7 +5,7 @@ export default function Header() {
     return (
       <View style={headerStyles.container}>
           <Text style={headerStyles.title}> 
-            Filmer
+            FILMER
           </Text>         
       </View>
     );

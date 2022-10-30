@@ -28,9 +28,7 @@ export default function Page() {
 
   return (
     <View style={pageStyles.container}>
-      <ScrollView style={pageStyles.scrollView}>
         {renderSwitch()}
-      </ScrollView>
     </View>
   );
 };

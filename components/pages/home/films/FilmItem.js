@@ -1,15 +1,18 @@
 import { Text, View, Image } from 'react-native';
+import filmItemStyles from '../../../../styles/filmitem';
 
 export default function FilmItem(props) {
   const filmTitle = props.title
+  const filmRate = props.rate
 
     return (
-      <View>
-        {/* <img src='assets/images/Film.png'/> */}
-        <Image style={{height: "50vmin", width: "50vmin"}} source={require('../../../../assets/images/Film.png')}/>
-        <Text>
-          {filmTitle}
-        </Text>
+      <View style={filmItemStyles.container}>
+        <Image style={filmItemStyles.filmStyle} source={require('../../../../assets/images/KillBill.jpg')}/>
+        <View style={filmItemStyles.rateContainerStyle}>
+          <Text style={filmItemStyles.rateStyle}>
+            {filmRate}
+          </Text>
+        </View>
       </View>
     );
   };
