@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
-import darkColors from '../themes/colors/dark';
+import colors from '../themes/colors';
 
 const navigationStyles = StyleSheet.create({
     container:{
-      backgroundColor: darkColors.primary,
+      backgroundColor: colors.primary,
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-evenly",

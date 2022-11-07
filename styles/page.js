@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import darkColors from '../themes/colors/dark';
+import colors from '../themes/colors';
 
 const pageStyles = StyleSheet.create({
     container:{
       flex: 7,
-      backgroundColor: darkColors.secondary,
+      backgroundColor: colors.secondary,
     },
 });
 

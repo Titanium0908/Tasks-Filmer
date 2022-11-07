@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import colors from '../themes/colors';
 import fonts from '../themes/fonts';
 
-const filmlistStyles = StyleSheet.create({
+const myFilmListStyles = StyleSheet.create({
     container:{
       flex: 1,
     },
@@ -15,12 +15,12 @@ const filmlistStyles = StyleSheet.create({
     flatList:{
     },
     textContainer:{
-      flex: 1,
-      justifyContent: 'center'
+      flex: 3,
+      justifyContent: 'flex-end'
     },
     flatListContainer:{
-      flex: 5,
+      flex: 1,
     }
 });
 
-export default filmlistStyles;
+export default myFilmListStyles;

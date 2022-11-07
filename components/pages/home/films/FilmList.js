@@ -2,7 +2,7 @@ import { View,Text, FlatList } from 'react-native';
 import filmlistStyles from '../../../../styles/filmlist';
 import FilmItem from './FilmItem';
 import { useSelector } from 'react-redux'
-import { useEffect } from 'react';
+
 
 export default function FilmList(props) {
   const json = useSelector(state => state.data.films) 
@@ -10,7 +10,7 @@ export default function FilmList(props) {
   const renderItem = ({item}) => {
     return(
       <FilmItem
-         title={item.title}
+         image={item.image}
          rate={item.rate}
       />
     )

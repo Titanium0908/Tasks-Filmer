@@ -1,19 +1,18 @@
 import { StyleSheet } from 'react-native';
+import colors from '../themes/colors';
+import fonts from '../themes/fonts';
 
 const myStyles = StyleSheet.create({
     container:{
-        backgroundColor: 'rgba(0, 0, 0, 0.95)',
-      flex: 1,
-      //alignItems: 'center',
-      
+      flex: 1,     
     },
     text:{
-        fontSize: 40,
-        color: 'rgba(255, 255, 255, 1.0)',
-        // paddingVertical: 50,
-        // paddingHorizontal: 300,
+        fontFamily: fonts.fontDemiBold,
+        fontSize: 34,
+        color: colors.textHeader,
+        margin: 'auto',
         flex: 1,
-    }
+    },
 });
 
 export default myStyles;

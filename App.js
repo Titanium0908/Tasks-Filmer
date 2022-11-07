@@ -5,7 +5,7 @@ import Page from './components/Page';
 import appStyles from './styles/app';
 import store from './app/store'
 import { Provider } from 'react-redux'
-import darkColors from './themes/colors/dark';
+import colors from './themes/colors';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
@@ -33,7 +33,7 @@ export default function App() {
       <View style={appStyles.container} onLayout={onLayoutRootView}>
         <StatusBar
           animated={true}
-          backgroundColor={darkColors.primary}
+          backgroundColor={colors.primary}
           barStyle={'light-content'}
           hidden={false}/>
         <Header/>

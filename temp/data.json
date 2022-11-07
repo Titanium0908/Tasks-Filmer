@@ -2,33 +2,51 @@
   "data": [
     {
       "id": "1",
-      "title": "KILL BILL",
-      "rate": "9.0"
+      "image": "https://polymus.ru/media/cache/9b/02/9b02f280d4479013cc8139d40dc5940b.jpg",
+      "rate": "9.0",
+      "year": "2014",
+      "genre": "science-fiction film",
+      "name": "Interstellar"
     },
     {
       "id": "2",
-      "title": "Second Item",
-      "rate": "8.0"
+      "image": "https://i.ytimg.com/vi/c_dNIXwrbzY/maxresdefault.jpg",
+      "rate": "8.0",
+      "year": "2014",
+      "genre": "martial arts film",
+      "name": "Kill Bill vol1"
     },
     {
       "id": "3",
-      "title": "Third Item",
-      "rate": "8.0"
+      "image": "https://oir.mobi/uploads/posts/2021-03/1616710630_4-p-indiana-dzhons-krasivo-5.jpg",
+      "rate": "8.0",
+      "year": "2014",
+      "genre": "action-adventure film",
+      "name": "Indiana Jones"
     },
     {
       "id": "4",
-      "title": "Third Item",
-      "rate": "8.0"
+      "image": "https://i.ytimg.com/vi/c_dNIXwrbzY/maxresdefault.jpg",
+      "rate": "8.0",
+      "year": "2014",
+      "genre": "action-adventure film",
+      "name": "Indiana Jones"
     },
     {
       "id": "5",
-      "title": "Third Item",
-      "rate": "8.0"
+      "image": "https://i.ytimg.com/vi/c_dNIXwrbzY/maxresdefault.jpg",
+      "rate": "8.0",
+      "year": "2014",
+      "genre": "action-adventure film",
+      "name": "Indiana Jones"
     },
     {
       "id": "6",
-      "title": "Third Item",
-      "rate": "8.0"
+      "image": "https://i.ytimg.com/vi/c_dNIXwrbzY/maxresdefault.jpg",
+      "rate": "8.0",
+      "year": "2014",
+      "genre": "action-adventure film",
+      "name": "Indiana Jones"
     }
   ]
 }

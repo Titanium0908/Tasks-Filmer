@@ -1,7 +1,5 @@
-import { Text, View } from 'react-native';
-import { ScrollView } from 'react-native-web';
+import { View } from 'react-native';
 import homeStyles from '../../../styles/home';
-import FilmItem from './films/FilmItem';
 import FilmList from './films/FilmList';
 
 export default function Home() {

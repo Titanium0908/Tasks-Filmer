@@ -1,13 +1,12 @@
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import myStyles from '../../../styles/my';
+import MyFilmList from './films/MyFIlmList';
 
 
-export default function Settings() {
+export default function My() {
     return (
       <View style={myStyles.container}>
-        <Text>
-            
-        </Text>
+        <MyFilmList/>
       </View>
     );
   };

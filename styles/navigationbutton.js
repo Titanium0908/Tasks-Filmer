@@ -1,21 +1,21 @@
 import { StyleSheet } from 'react-native';
-import darkColors from '../themes/colors/dark';
+import colors from '../themes/colors';
 
 const navigationbuttonStyles = StyleSheet.create({
     tinyLogoSelected: {
-      color: darkColors.kindOfWhite,
+      color: colors.iconSelected,
       margin: 'auto',
     },
     pressableAreaSelected: {
       width: 58,
       height: 58,
-      backgroundColor: darkColors.darkBlue,
+      backgroundColor: colors.mainColor,
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 10,
     },
     tinyLogo: {
-      color: darkColors.gray,
+      color: colors.iconNotSelected,
       margin: 'auto',
     },
     pressableArea: {
@@ -24,7 +24,7 @@ const navigationbuttonStyles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 10,
-    }
+    },
 });
 
 export default navigationbuttonStyles;
