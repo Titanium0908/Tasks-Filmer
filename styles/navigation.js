@@ -7,7 +7,6 @@ const navigationStyles = StyleSheet.create({
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-evenly",
-      position:'absolute',
       width: '100%',
       height: 80,
       bottom: 0,

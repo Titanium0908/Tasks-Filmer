@@ -6,7 +6,7 @@ const refreshState = () => {
 }
 
 const state = store.getState();
-const isDarkColor = state.theme.isDark;
+const isDarkColor = !state.theme.isDark;
 
 const colorsEnum = {
     darkBlue: '#3E65FB',

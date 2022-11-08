@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import Settings from './pages/settings/Settings';
 import Home from './pages/home/Home';
 import My from './pages/my/My';
+import Search from './pages/search/Search'
 
 export default function Page() {  
 
@@ -17,6 +18,8 @@ export default function Page() {
         return (<Settings/>)
       case 3:
         return (<My/>)
+      case 4:
+        return (<Search/>)
       default:
         return (
         <Text>
